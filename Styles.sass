@@ -1,0 +1,133 @@
+.message 
+  border: 2px solid #ccc
+  padding: 10px
+  color: #333
+  margin: 5px
+  width: 500px
+
+
+ 
+.success 
+  @extend .message
+  border-color: green
+
+
+ 
+.error 
+  @extend .message
+  border-color: red
+
+
+ 
+.warning 
+  @extend .message
+  border-color: yellow
+
+/* hier startet die Bildergalerie*/
+
+/* Rahmen um den einzelnen Bild + Text bereich ruhend*/
+div.gallery 
+  border: 4px solid #ccc
+
+
+/* Rahmen wenn sich was über den Bereich bewegt*/
+
+div.gallery:hover 
+  border: 1px solid #777
+
+
+
+
+div.gallery img 
+  width: 100%
+  height: 300px
+  object-fit: cover
+  
+
+/* text padding unter dem Bild */
+div.desc 
+  padding: 10px
+
+  text-align: center
+
+
+
+
+* 
+  box-sizing: border-box
+
+
+/* links ausrichten 6px zum nächsten Bild, 24,9999% weil 4 Bilder*/
+
+.responsive 
+  padding: 0 6px
+
+  float: left
+
+  width: 24.99999%
+
+
+
+
+
+/* 2 nebeneinander ab 700px */
+
+@media only screen and (max-width: 900px) 
+  .responsive 
+    width: 49.99999%
+
+    margin: 6px 0
+
+  
+
+
+/* nur ein Bild */
+
+@media only screen and (max-width: 500px) 
+  .responsive 
+    width: 100%
+
+  
+
+
+
+
+.clearfix:after 
+  content: ""
+
+  display: table
+
+  clear: both
+/* Hero Image */
+
+
+
+/* The hero image */
+.hero-image1 
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/back1.jpg")
+
+  /* Set a specific height */
+  width: 100%
+
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  position: relative
+  margin-bottom: 100px
+
+.hero-image1 img
+  width: 100%
+
+
+.container
+  position: relative
+
+.galleryover
+  position: absolute
+  bottom: -65px
+
+
+  * box-sizing:border-box

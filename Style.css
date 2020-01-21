@@ -63,3 +63,30 @@ footer >p {
   padding-bottom: 20px;
   font-size: 10px;
 }
+
+.pictureTeam > .background {
+  width: 35%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+box-shadow: 1px 5px 28px 22px #000000; 
+box-shadow: 1px 5px 28px 22px #000000;
+}
+.pictureTeam >p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.pictureTeam {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  transform: rotate(90deg);
+}
+
+#Team {
+  background-image: url('img/BroCode.jpg');
+}
